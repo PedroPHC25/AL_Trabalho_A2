@@ -4,6 +4,7 @@ import sys
 import cv2
 import numpy as np
 from glob import glob
+
 # Criando a matriz pela lista de imagens
 def createDataMatrix(images):
     print("Criando a matriz com os dados ",end=" ... ")
