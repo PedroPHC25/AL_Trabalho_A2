@@ -63,7 +63,7 @@ def resetSliderValues(*args):
     createNewFace()
 if __name__ == '__main__':
 # Quantidade de EigenFaces a serem gerados (considerados)
-    NUM_EIGEN_FACES = 15
+    NUM_EIGEN_FACES = 5
 # Peso máximo dos EigenFaces
     MAX_SLIDER_VALUE = 255
 # Diretório das imagens
