@@ -18,7 +18,7 @@ def create_base_matrix(folder):
     # print(train_famous_np_matrix, train_famous_np_matrix.shape)
     mean_train_face = np.mean(train_famous_np_matrix, axis=0)
     # print(mean_train_face, mean_train_face.shape)
-    centered_train_face = (train_famous_np_matrix - mean_train_face)
+    centered_train_face = (train_famous_np_matrix - mean_train_face)/np.std(train_famous_np_matrix)
     # print(centered_train_face, centered_train_face.shape)
     V_Face_Famous = np.linalg.svd(centered_train_face, full_matrices=False)[2]
     return mean_train_face, V_Face_Famous
